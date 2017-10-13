@@ -10,11 +10,11 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 4154367f0449b174790ee3f3c9480ca0bceeea87
-ms.sourcegitcommit: c6d9500492131bf782488fcafc7c5c41c2703e92
+ms.openlocfilehash: ca1af18ae37549238ffaafbd2d5f8223974e0d11
+ms.sourcegitcommit: 12ea38af93cc4f1ba6aac333035829a69f6aed0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="managed-disks"></a>Verwaltete Datenträger
 
@@ -129,7 +129,7 @@ async_update.wait()
 
 ## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Skalierungsgruppen für virtuelle Computer mit Managed Disks
 
-Vor der Einführung von verwalteten Datenträgern mussten Sie manuell ein Speicherkonto für alle virtuellen Computer erstellen, die in der Skalierungsgruppe enthalten sein sollten, und anschließend mit dem Auflistungsparameter ``vhd_containers`` den vollständigen Speicherkontonamen an die REST-API der Skalierungsgruppe übergeben. Das offizielle Handbuch für den Übergang finden Sie in diesem Artikel: `article <https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
+Vor der Einführung von verwalteten Datenträgern mussten Sie manuell ein Speicherkonto für alle virtuellen Computer erstellen, die in der Skalierungsgruppe enthalten sein sollten, und anschließend mit dem Auflistungsparameter ``vhd_containers`` den vollständigen Speicherkontonamen an die REST-API der Skalierungsgruppe übergeben. Das offizielle Handbuch für den Übergang finden Sie in diesem Artikel: `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
 
 Dank verwalteter Datenträger müssen Sie nun keine Speicherkonten mehr verwalten. Wenn Sie mit der Verwendung des VMSS Python SDK vertraut sind, können Sie nun das gleiche Speicherprofil (``storage_profile``) wie bei der Erstellung der virtuellen Computer verwenden:
 
