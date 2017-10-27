@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 51cdf73060caeb74c587d932eb70c3fd3a2d3b71
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 04aeb24f5ed294f5862e2e1f1bc6319c317bb157
+ms.sourcegitcommit: cd2d097f5e91aae1eb1cd5a238d3b49ac427fd64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-monitoring-libraries-for-python"></a>Azure-Überwachungsbibliotheken für Python
 
@@ -24,13 +24,13 @@ Die Überwachung stellt Daten bereit, auf deren Grundlage die ordnungsgemäße A
 
 Weitere Informationen zu Azure Monitor finden Sie [hier](https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-overview-azure-monitor). 
 
-## <a name="client"></a>Client-
+## <a name="installation"></a>Installation
 ```bash
-pip install azure-monitor
+pip install azure-mgmt-monitor
 ```
 
-### <a name="example"></a>Beispiel
-In diesem Beispiel werden die Metriken einer Ressource in Azure (virtuelle Computer, usw.) abgerufen. 
+## <a name="example---metrics"></a>Beispiel – Metriken
+In diesem Beispiel werden die Metriken einer Ressource in Azure (virtuelle Computer, usw.) abgerufen. Für dieses Beispiel ist mindestens Version 0.4.0 des Python-Pakets erforderlich.
 
 Eine vollständige Liste der verfügbaren Schlüsselwörter für Filter ist [hier](https://msdn.microsoft.com/library/azure/mt743622.aspx) verfügbar.
 
@@ -38,7 +38,7 @@ Unterstützte Metriken pro Ressourcentyp sind [hier](https://docs.microsoft.com/
 
 ```python
 import datetime
-from azure.monitor import MonitorClient
+from azure.mgmt.monitor import MonitorManagementClient
 
 # Get the ARM id of your resource. You might chose to do a "get"
 # using the according management or to build the URL directly
@@ -50,7 +50,7 @@ resource_id = (
 ).format(subscription_id, resource_group_name, vm_name)
 
 # create client
-client = MonitorClient(
+client = MonitorManagementClient(
     credentials,
     subscription_id
 )
@@ -78,25 +78,21 @@ for metric in client.metric_definitions.list(resource_id):
 today = datetime.datetime.now().date()
 yesterday = today - datetime.timedelta(days=1)
 
-filter = " and ".join([
-    "name.value eq 'Percentage CPU'",
-    "aggregationType eq 'Total'",
-    "startTime eq {}".format(yesterday),
-    "endTime eq {}".format(today),
-    "timeGrain eq duration'PT1H'"
-])
-
 metrics_data = client.metrics.list(
     resource_id,
-    filter=filter
+    timespan="{}/{}".format(yesterday, today),
+    interval='PT1H',
+    metric='Percentage CPU',
+    aggregation='Total'
 )
 
-for item in metrics_data:
-    # azure.monitor.models.Metric
+for item in metrics_data.value:
+    # azure.mgmt.monitor.models.Metric
     print("{} ({})".format(item.name.localized_value, item.unit.name))
-    for data in item.data:
-        # azure.monitor.models.MetricData
-        print("{}: {}".format(data.time_stamp, data.total))
+    for timeserie in item.timeseries:
+        for data in timeserie.data:
+            # azure.mgmt.monitor.models.MetricData
+            print("{}: {}".format(data.time_stamp, data.total))
 
 # Example of result:
 # Percentage CPU (percent)
@@ -109,15 +105,8 @@ for item in metrics_data:
 # 2016-11-16 06:00:00+00:00: 114.9
 # 2016-11-16 07:00:00+00:00: 45.4
 ```
-> [!div class="nextstepaction"]
-> [Informationen zu den Client-APIs](/python/api/overview/azure/monitoring/clientlibrary)
 
-## <a name="mangement-api"></a>Verwaltungs-API
-```bash
-pip install azure-mgmt-monitor
-```
-
-### <a name="example"></a>Beispiel
+## <a name="example---alerts"></a>Beispiel – Warnungen
 In diesem Beispiel wird gezeigt, wie Sie Warnungen für Ihre Ressourcen gleich bei der Erstellung automatisch einrichten, um sicherzustellen, dass alle Ressourcen ordnungsgemäß überwacht werden.
 
 Erstellen Sie eine Datenquelle auf einem virtuellen Computer, um eine Warnung für die CPU-Nutzung auszugeben:
@@ -132,7 +121,7 @@ resource_id = (
 ).format(self.settings.SUBSCRIPTION_ID)
 
 # create client
-monitor_mgmt_client = MonitorMgmtClient(
+client = MonitorMgmtClient(
     credentials,
     subscription_id
 )
@@ -173,7 +162,7 @@ rule_action = RuleEmailAction(
 Erstellen der Warnungsregel:
 ```python
 rule_name = 'MyPyTestAlertRule'
-my_alert = monitor_mgmt_client.alert_rules.create_or_update(
+my_alert = client.alert_rules.create_or_update(
     group_name,
     rule_name,
     {
