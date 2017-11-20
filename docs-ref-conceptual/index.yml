@@ -1,0 +1,81 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Azure für Python-Entwickler
+metadata:
+  document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
+  title: 'Azure für Python-Entwickler – Tutorials, API-Referenz'
+  description: Steigen Sie mithilfe der unten aufgeführten Ressourcen in die Entwicklung von Apps mit Azure ein. Sie enthalten hervorragende Tutorials und Tools für Python-Entwickler.
+  keywords: 'Azure, Python, SDK, API'
+  author: lisawong19
+  ms.author: liwong
+  manager: douge
+  ms.date: 07/20/2017
+  ms.topic: article
+  ms.prod: azure
+  ms.technology: azure
+  ms.devlang: python
+  ms.service: multiple
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Steigen Sie mithilfe der unten aufgeführten Ressourcen in die Entwicklung von Apps mit Azure ein. Sie enthalten hervorragende Tutorials und Tools für Python-Entwickler.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+            html: <p>Bereitstellen Ihrer ersten Web-App in Azure</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Erste Schritte
+          - href: 'https://azure.microsoft.com/resources/samples/?platform=pythont&view=azure-python'
+            html: <p>Azure-Codebeispiele mit Python</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: Codebeispiele
+          - href: 'https://docs.microsoft.com/python/azure/python-azure-tools'
+            html: <p>Entwicklertools</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
+            title: SDK &amp; Tools
+          - href: 'https://docs.microsoft.com/en-us/python/api/overview/azure/?view=azure-python'
+            html: <p>Python-Bibliotheken</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
+            title: API-Referenz
+  - title: Fünfminütige Schnellstarts
+    items:
+      - type: paragraph
+        text: 'Erfahren Sie, wie Sie Python-Apps mit Azure-Diensten erstellen.'
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/app-service-web.svg'
+            title: Bereitstellen Ihrer ersten Web-App in Azure
+            href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
+            title: Verbinden Ihrer App mit Azure PostgreSQL-Datenbank
+            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
+            title: Erstellen einer Web-App mit Cosmos DB
+            href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/MachineLearning.svg'
+            title: Data Science mit Azure Notebooks
+            href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
+  - title: Beispiele
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://azure.microsoft.com/resources/samples/container-service-python-manage/">Bereitstellen eines Docker-Containers in einem Azure-Cluster und Herstellen einer Verbindung</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-python-manage/">Erste Schritte mit der Azure Storage-Verwaltung in Python</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/">Beispiel für die Verwaltung von Azure Virtual Machines</a>'
