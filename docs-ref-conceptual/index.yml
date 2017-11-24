@@ -60,9 +60,9 @@ sections:
             title: Bereitstellen Ihrer ersten Web-App in Azure
             href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
           - image:
-              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
-            title: Verbinden Ihrer App mit Azure PostgreSQL-Datenbank
-            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+              src: 'https://docs.microsoft.com/azure/media/index/API_Face.svg'
+            title: Erste Schritte mit der Gesichtserkennungs-API
+            href: 'https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
             title: Erstellen einer Web-App mit Cosmos DB
