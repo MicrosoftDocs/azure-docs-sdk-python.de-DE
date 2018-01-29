@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
-ms.openlocfilehash: 64465964d32934a6a45dec44cb92a0a8a84b9c37
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: e00e821ff3e806a994fa8d96aae50c35eeeb8392
+ms.sourcegitcommit: 5ab15a7214082d16f339a13e4ae7735b3a57a9aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="azure-storage-libraries-for-python"></a>Azure Storage-Bibliotheken für Python
 
@@ -29,10 +29,12 @@ Mit den Verwaltungsbibliotheken können Sie Azure Storage-Konten erstellen, aktu
 
 ## <a name="install-the-libraries"></a>Installieren der Bibliotheken
 
-### <a name="client"></a>Client-
+### <a name="client"></a>Client
+
+Azure Storage-Clientbibliotheken bestehen aus vier Paketen: Blob, Datei, Warteschlange und Tabelle. Führen Sie zum Installieren der Blobpakets Folgendes aus:
 
 ```bash
-pip install azure-storage
+pip install azure-storage-blob
 ```
 
 ### <a name="management"></a>Verwaltung
@@ -43,8 +45,7 @@ pip install azure-mgmt-storage
 
 ## <a name="example"></a>Beispiel
 ```python
-storage_client = CloudStorageAccount(storage_account_name, storage_key)
-blob_service = storage_client.create_block_blob_service()
+blob_service = BlockBlobService(account_name, account_key)
 
 blob_service.create_container(
     'mycontainername',
@@ -65,8 +66,8 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 | | |
 |--|--|
-| [Erste Schritte mit Azure Blob Storage in Python](https://azure.microsoft.com/resources/samples/storage-blob-python-getting-started/) | Erstellen, Lesen, Aktualisieren, Beschränken des Zugriffs und Löschen von Dateien und Objekten in Azure Storage |
-| [Erste Schritte mit Azure Queue Storage in Python](https://azure.microsoft.com/resources/samples/storage-queue-python-getting-started/) | Einfügen, Einsehen, Abrufen und Löschen von Nachrichten aus Azure Storage-Warteschlangen | 
+| [Erste Schritte mit Azure Blob Storage in Python](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-python-how-to-use-blob-storage) | Erstellen, Lesen, Aktualisieren, Beschränken des Zugriffs und Löschen von Dateien und Objekten in Azure Storage |
+| [Erste Schritte mit Azure Queue Storage in Python](https://docs.microsoft.com/en-us/azure/storage/queues/storage-python-how-to-use-queue-storage) | Einfügen, Einsehen, Abrufen und Löschen von Nachrichten aus Azure Storage-Warteschlangen | 
 | [Verwalten von Azure Storage-Konten](https://azure.microsoft.com/resources/samples/storage-python-manage) | Erstellen, Aktualisieren und Löschen von Speicherkonten Abrufen und erneutes Generieren von Speicherzugriffsschlüsseln
 
 Sehen Sie sich weiteren [Python-Beispielcode](https://azure.microsoft.com/resources/samples/?platform=python) an, den Sie in Ihren Apps verwenden können.
