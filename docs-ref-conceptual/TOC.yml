@@ -3,6 +3,8 @@
   items:
     - name: Übersicht
       href: python-sdk-azure-overview.md
+    - name: Installation
+      href: /azure/python-how-to-install
     - name: Tools
       href: python-azure-tools.md
     - name: Erste Schritte mit Python-Modulen
@@ -19,7 +21,7 @@
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
         - name: Azure-Notebooks
           href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
-    - name: Lernprogramme
+    - name: Tutorials
       items:
         - name: Flask und PostgreSQL
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-docker-python-postgresql-app'

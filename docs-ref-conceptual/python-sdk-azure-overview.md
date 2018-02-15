@@ -11,15 +11,15 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: 7c069f849007ea2c02cf4347ce213dd033dcd68b
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.openlocfilehash: e0c7b4acd1aa57d141f4407c0ba483a1529d2b35
+ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="azure-libraries-for-python"></a>Azure-Bibliotheken für Python
 
-Die Azure-Bibliotheken für Python ermöglichen Ihnen die Nutzung von Azure-Diensten und die Verwaltung von Azure-Ressourcen mithilfe Ihres Anwendungscodes. Die Bibliotheken stehen in [PyPI](python-sdk-azure-install.md) für die Verwendung in Ihren Python-Projekten zur Verfügung.
+Die Azure-Bibliotheken für Python ermöglichen Ihnen die Nutzung von Azure-Diensten und die Verwaltung von Azure-Ressourcen mithilfe Ihres Anwendungscodes. 
 
 ## <a name="manage-azure-resources"></a>Verwalten von Azure-Ressourcen
 
@@ -45,7 +45,7 @@ server = sql_client.servers.create_or_update(
 )
 ```
 
-Eine vollständige Liste der Bibliotheken und Informationen zu ihrem Import in Ihre Projekte finden Sie in den [Installationsanweisungen](python-sdk-azure-install.md). Lesen Sie anschließend den [Artikel mit den ersten Schritten](python-sdk-azure-get-started.yml), um die Authentifizierung einzurichten und Beispielcode für Ihr eigenes Azure-Abonnement auszuführen.
+Eine vollständige Liste der Bibliotheken und Informationen zu ihrem Import in Ihre Projekte finden Sie in den [Installationsanweisungen](/azure/python-how-to-install). Lesen Sie anschließend den [Artikel mit den ersten Schritten](python-sdk-azure-get-started.yml), um die Authentifizierung einzurichten und Beispielcode für Ihr eigenes Azure-Abonnement auszuführen.
 
 ## <a name="connect-to-azure-services"></a>Herstellen einer Verbindung mit Azure-Diensten
 
@@ -74,7 +74,7 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 ## <a name="sample-code-and-reference"></a>Beispielcode und Referenz
 Die folgenden Beispiele behandeln allgemeine Automatisierungsaufgaben mit den Azure-Verwaltungsbibliotheken für Python und enthalten Code, der direkt in Ihren eigenen Apps verwendet werden kann:
-- [Virtuelle Computer](python-sdk-azure-virtual-machine-samples.md)
+- [Virtual Machines](python-sdk-azure-virtual-machine-samples.md)
 - [Web-Apps](python-sdk-azure-web-apps-samples.md)
 - [SQL-Datenbank](python-sdk-azure-sql-database-samples.md)
 
