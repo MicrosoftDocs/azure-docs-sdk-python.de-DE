@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: postgresql
-ms.openlocfilehash: e184efc276fb4e6d86504ab44e47340ce72e7006
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: cad5995072d5040764986765d9a900f46f5141ec
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 #<a name="azure-postgresql-libraries-for-python"></a>Azure PostgreSQL-Bibliotheken für Python
 
@@ -50,7 +50,7 @@ cursor.execute(selectsql)
 ```
 
 ## <a name="management-api"></a>Verwaltungs-API
-### <a name="requirements"></a>Anforderungen
+### <a name="requirements"></a>Requirements (Anforderungen)
 Sie müssen die PostgreSQL-Verwaltungsbibliotheken für Python installieren.
 ```bash
 pip install azure-mgmt-rdbms
@@ -77,5 +77,5 @@ db = db_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/postgresql/managementlibrary)
+> [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/postgresql/management)
 

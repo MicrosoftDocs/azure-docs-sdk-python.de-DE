@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: mysql
-ms.openlocfilehash: 2ea2ed06d4532f9c9366257e049856dcef73385e
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: f03134bfddfabc426cbcaf4d98ef86d14038861f
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-mysql-libraries-for-python"></a>Azure MySQL-Bibliotheken für Python 
 
@@ -49,7 +49,7 @@ cursor.execute(selectsql)
 
 Über die Verwaltungs-API können Sie MySQL-Ressourcen in Ihrem Abonnement erstellen und verwalten.
 
-### <a name="requirements"></a>Anforderungen
+### <a name="requirements"></a>Requirements (Anforderungen)
 Sie müssen die MySQL-Verwaltungsbibliotheken für Python installieren.
 ```bash
 pip install azure-mgmt-rdbms
@@ -105,4 +105,4 @@ firewall_rule = rule_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/mysql/managementlibrary)
+> [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/mysql/management)

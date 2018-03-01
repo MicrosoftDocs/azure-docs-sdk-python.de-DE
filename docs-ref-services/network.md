@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 261225223e84d24f294f4470dd2b00cf6402dea7
-ms.sourcegitcommit: cd2d097f5e91aae1eb1cd5a238d3b49ac427fd64
+ms.openlocfilehash: 47252ca3b2f5c6087277bac3735025f0dbabbdd8
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-network-libraries-for-python"></a>Azure-Netzwerk-Bibliotheken für Python
 
@@ -74,7 +74,7 @@ subnet_info = async_subnet_creation.result()
 ```
 
 > [!div class="nextstepaction"]
-> [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/network/managementlibrary)
+> [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/network/management)
 
 ### <a name="samples"></a>Beispiele
 
