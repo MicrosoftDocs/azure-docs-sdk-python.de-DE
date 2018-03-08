@@ -11,13 +11,32 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5ce4ef27667d45697200eef67be92c62812b3809
-ms.sourcegitcommit: 66e112df9be660354e23955b0adf3efd784ba739
+ms.openlocfilehash: 792feac12f8328e2467017530065350e347c59b7
+ms.sourcegitcommit: 757bf84535fd9d8299c4b51ec92a5ab1926cb671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="installation"></a>Installation
+
+## <a name="which-python-and-which-version-to-use"></a>Welche Python und welche Version sollte verwendet werden?
+Verschiedene Python-Interpreter sind verfügbar. Einige Beispiele:
+
+* CPython – der standardmäßige und am häufigsten verwendete Python-Interpreter
+* PyPy – schnelle, kompatible alternative Implementierung zu CPython
+* IronPython – Python-Interpreter, der unter .Net/CLR ausgeführt wird
+* Jython – Python-Interpreter, der in JVM (Java Virtual Machine) ausgeführt wird
+
+**CPython**, v2.7 oder v3.4 und höher und PyPy 5.4.0 wurden getestet und unterstützen das Python Azure SDK.
+
+## <a name="where-to-get-python"></a>Wo erhalte ich Python?
+Es gibt mehrere Möglichkeiten, CPython zu beziehen:
+
+* Direkt über [Python](https://www.python.org/)
+* Von angesehenen Distributoren wie [Anaconda](https://www.anaconda.com/), [Enthought](https://www.enthought.com/) oder [ActiveState](https://www.activestate.com/)
+* Aus der Source erzeugen!
+
+Sofern Sie keine spezifischen Anforderungen haben, empfehlen wir Ihnen die ersten beiden Optionen.
 
 ## <a name="installation-with-pip"></a>Installation mit pip
 
