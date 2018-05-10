@@ -1,28 +1,28 @@
 ---
-title: "Verwaltete Datenträger"
-description: "Erstellen, Ändern der Größe und Aktualisieren eines verwalteten Datenträgers"
+title: Managed Disks
+description: Erstellen, Ändern der Größe und Aktualisieren eines verwalteten Datenträgers
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 1dceb1b2fe700904b530f1834f0338f7d5e61999
-ms.sourcegitcommit: 3e477d608bbb41f0c561c88e4c665013e3008c26
+ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
+ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="managed-disks"></a>Verwaltete Datenträger
+# <a name="managed-disks"></a>Managed Disks
 
 Azure Managed Disks und 1.000 virtuelle Computer in einer Skalierungsgruppe sind jetzt [allgemein verfügbar](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/). Azure Managed Disks bietet mehr Flexibilität, höhere Sicherheit und eine bessere Skalierung. Ein Speicherkonto für Datenträger ist nicht mehr erforderlich, sodass sich Kunden bei der Skalierung keine Gedanken um die mit Speicherkonten einhergehenden Einschränkungen machen müssen. Dieser Artikel enthält eine kurze Einführung und Referenz zur Nutzung des Diensts über Python.
 
 
 
-Aus Entwicklerperspektive entspricht die Managed Disks-Umgebung in der Azure CLI der CLI-Umgebung in anderen plattformübergreifenden Tools. Für die Verwaltung von Managed Disks können Sie das [Azure Python](https://azure.microsoft.com/develop/python/) SDK und [azure-mgmt-compute-Paket 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) verwenden. Ein Computeclient kann anhand [dieses Tutorials](http://azure-sdk-for-python.readthedocs.io/en/latest/resourcemanagementcomputenetwork.html) erstellt werden.
+Aus Entwicklerperspektive entspricht die Managed Disks-Umgebung in der Azure CLI der CLI-Umgebung in anderen plattformübergreifenden Tools. Für die Verwaltung von Managed Disks können Sie das [Azure Python](https://azure.microsoft.com/develop/python/) SDK und [azure-mgmt-compute-Paket 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) verwenden. Ein Computeclient kann anhand [dieses Tutorials](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python) erstellt werden.
 
 
 ## <a name="standalone-managed-disks"></a>Eigenständige verwaltete Datenträger
