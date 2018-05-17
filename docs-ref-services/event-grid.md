@@ -1,6 +1,6 @@
 ---
-title: "Azure Event Grid-Bibliotheken für Python"
-description: 
+title: Azure Event Grid-Bibliotheken für Python
+description: ''
 keywords: Azure, Python, SDK, API, Event Grid
 author: lisawong19
 ms.author: liwong
@@ -11,24 +11,85 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: 299b50ce8366d0c49ade28dfece98d6696a4f9ef
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: e68504b3ba5834a145af1231eacc076e424a2256
+ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="event-grid-libraries-for-python"></a>Event Grid-Bibliotheken für Python
 
-## <a name="overview"></a>Übersicht
+
 Azure Event Grid ist ein vollständig verwalteter intelligenter Dienst für das Ereignisrouting, der eine einheitliche Ereignisnutzung mithilfe eines Veröffentlichen/Abonnieren-Modells ermöglicht.
 
-## <a name="management-api"></a>Verwaltungs-API
+[Weitere Informationen](/azure/event-grid/overview) zu Azure Event Grid und erste Schritte mit dem [Tutorial zu Azure Blob Storage-Ereignissen](/azure/storage/blobs/storage-blob-event-quickstart) 
+
+## <a name="publish-sdk"></a>Veröffentlichungs-SDK
+
+Mit dem Veröffentlichungs-SDK von Azure Event Grid können Sie Ereignisse authentifizieren, erstellen, verarbeiten und in Themen veröffentlichen.
+
+### <a name="installation"></a>Installation 
+
+Installieren Sie das Paket mithilfe von [pip](https://pip.pypa.io/en/stable/quickstart/).
+
+```bash
+pip install azure-eventgrid
+```
+
+### <a name="example"></a>Beispiel 
+
+Der folgende Code veröffentlicht ein Ereignis in einem Thema. Sie können den Schlüssel und Endpunkt des Themas über das Azure-Portal oder die Azure-Befehlszeilenschnittstelle abrufen:
+
+```azurecli-interactive
+endpoint=$(az eventgrid topic show --name <topic_name> -g gridResourceGroup --query "endpoint" --output tsv)
+key=$(az eventgrid topic key list --name <topic_name> -g gridResourceGroup --query "key1" --output tsv)
+```
+
+```python
+from datetime import datetime
+from azure.eventgrid import EventGridClient
+from msrest.authentication import TopicCredentials
+
+def publish_event(self):
+
+        credentials = TopicCredentials(
+            self.settings.EVENT_GRID_KEY
+        )
+        event_grid_client = EventGridClient(credentials)
+        event_grid_client.publish_events(
+            "your-endpoint-here",
+            events=[{
+                'id' : "dbf93d79-3859-4cac-8055-51e3b6b54bea",
+                'subject' : "Sample subject",
+                'data': {
+                    'key': 'Sample Data'
+                },
+                'event_type': 'SampleEventType',
+                'event_time': datetime(2018, 5, 2),
+                'data_version': 1
+            }]
+        )
+```
+
+> [!div class="nextstepaction"]
+> [Informationen zu den Client-APIs](/python/api/overview/azure/eventgrid/client)
+
+## <a name="management-sdk"></a>Verwaltungs-SDK
+
+Das Verwaltungs-SDK ermöglicht Ihnen das Erstellen, Aktualisieren und Löschen von Event Grid-Instanzen, -Themen und -Abonnements.
+
+### <a name="installation"></a>Installation 
+
+Installieren Sie das Paket mithilfe von [pip](https://pip.pypa.io/en/stable/quickstart/).
+
 ```bash
 pip install azure-mgmt-eventgrid
 ```
 
 ### <a name="example"></a>Beispiel
-Mit dem folgenden Beispiel wird ein benutzerdefiniertes Thema erstellt, das Thema abonniert und das Ereignis ausgelöst, um das Ergebnis anzuzeigen. RequestBin ist ein Open Source-Drittanbietertool, mit dem Sie einen Endpunkt erstellen und Anforderungen anzeigen können, die an ihn gesendet werden. Wechseln Sie zu [RequestBin](https://requestb.in/), und klicken Sie auf **Create a RequestBin** (RequestBin erstellen). Kopieren Sie die Bin-URL. Sie wird zum Abonnieren des Themas benötigt.
+
+Der folgende Code erstellt ein benutzerdefiniertes Thema und abonniert einen Endpunkt für das Thema. Der Code sendet anschließend über HTTPS ein Ereignis an das Thema.
+RequestBin ist ein Open Source-Drittanbietertool, mit dem Sie einen Endpunkt erstellen und Anforderungen anzeigen können, die an ihn gesendet werden. Wechseln Sie zu [RequestBin](https://requestb.in/), und klicken Sie auf **Create a RequestBin** (RequestBin erstellen). Kopieren Sie die Bin-URL. Sie wird zum Abonnieren des Themas benötigt.
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient
@@ -87,3 +148,6 @@ az group delete --name gridResourceGroup
 > [!div class="nextstepaction"]
 > [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/eventgrid/management)
 
+## <a name="learn-more"></a>Weitere Informationen
+
+[Receive events using the Event Grid SDK](/azure/event-grid/receive-events) (Empfangen von Ereignissen mithilfe des Event Grid SDK)
