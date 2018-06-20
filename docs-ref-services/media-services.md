@@ -1,6 +1,6 @@
 ---
-title: "Azure Media Services-Bibliotheken für Python"
-description: "Referenz zu Azure Media Services-Bibliotheken für Python"
+title: Azure Media Services-Bibliotheken für Python
+description: Referenz zu Azure Media Services-Bibliotheken für Python
 keywords: Azure, Python, SDK, API, Media Services
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479193"
 ---
 # <a name="azure-media-services-libraries-for-python"></a>Azure Media Services-Bibliotheken für Python
 

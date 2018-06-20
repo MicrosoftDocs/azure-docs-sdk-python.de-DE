@@ -1,6 +1,6 @@
 ---
-title: "Azure Notification Hubs-Bibliotheken für Python"
-description: "Referenz zu Azure Notification Hubs-Bibliotheken für Python"
+title: Azure Notification Hubs-Bibliotheken für Python
+description: Referenz zu Azure Notification Hubs-Bibliotheken für Python
 keywords: Azure, Python, SDK, API, Notification Hubs
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551583"
 ---
 # <a name="azure-notification-hubs-libraries-for-python"></a>Azure Notification Hubs-Bibliotheken für Python
 

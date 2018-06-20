@@ -1,6 +1,6 @@
 ---
-title: "Azure-Verwaltungsbibliotheken für Python-Beispiele für SQL-Datenbank"
-description: "Abrufen von Beispielcode zum Erstellen und Aktualisieren von Azure SQL-Datenbanken mit den Azure-Verwaltungsbibliotheken für Python"
+title: Azure-Verwaltungsbibliotheken für Python-Beispiele für SQL-Datenbank
+description: Abrufen von Beispielcode zum Erstellen und Aktualisieren von Azure SQL-Datenbanken mit den Azure-Verwaltungsbibliotheken für Python
 keywords: Azure, Python, SDK, API, SQL-Datenbank
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: a0ec8fb3d2ef5eb4c5c58a3370b6efa221e33029
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909013"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-sql-database"></a>Azure-Verwaltungsbibliotheken für Python-Beispiele für SQL-Datenbank
 

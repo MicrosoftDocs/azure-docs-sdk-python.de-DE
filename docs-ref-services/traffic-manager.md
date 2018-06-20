@@ -1,6 +1,6 @@
 ---
-title: "Azure Traffic Manager-Bibliotheken für Python"
-description: "Referenz zu Azure Traffic Manager-Bibliotheken für Python"
+title: Azure Traffic Manager-Bibliotheken für Python
+description: Referenz zu Azure Traffic Manager-Bibliotheken für Python
 keywords: Azure, Python, SDK, API, Traffic Manager
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478943"
 ---
 # <a name="azure-traffic-manager-libraries-for-python"></a>Azure Traffic Manager-Bibliotheken für Python
 

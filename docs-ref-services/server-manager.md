@@ -1,6 +1,6 @@
 ---
-title: "Azure-Server-Manager-Bibliotheken für Python"
-description: "Referenz zu Azure-Server-Manager-Bibliotheken für Python"
+title: Azure-Server-Manager-Bibliotheken für Python
+description: Referenz zu Azure-Server-Manager-Bibliotheken für Python
 keywords: Azure, Python, SDK, API, Server-Manager
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479233"
 ---
 # <a name="azure-server-manager-libraries-for-python"></a>Azure-Server-Manager-Bibliotheken für Python
 

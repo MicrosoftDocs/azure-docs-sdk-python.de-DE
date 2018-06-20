@@ -1,6 +1,6 @@
 ---
-title: "Azure Logic Apps-Bibliotheken für Python"
-description: "Referenz zu Azure Logic Apps-Bibliotheken für Python"
+title: Azure Logic Apps-Bibliotheken für Python
+description: Referenz zu Azure Logic Apps-Bibliotheken für Python
 keywords: Azure, Python, SDK, API, Logic Apps
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478783"
 ---
 # <a name="azure-logic-apps-libraries-for-python"></a>Azure Logic Apps-Bibliotheken für Python
 

@@ -1,6 +1,6 @@
 ---
-title: "Azure-Verwaltungsbibliotheken für Python-Beispiele für virtuelle Computer"
-description: "Abrufen von Beispielcode zum Erstellen und Aktualisieren von virtuellen Azure-Computern mit den Azure-Verwaltungsbibliotheken für Python"
+title: Azure-Verwaltungsbibliotheken für Python-Beispiele für virtuelle Computer
+description: Abrufen von Beispielcode zum Erstellen und Aktualisieren von virtuellen Azure-Computern mit den Azure-Verwaltungsbibliotheken für Python
 keywords: Azure, Python, SDK, API, virtuelle Computer
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 0222632b0d65395e00f64f07806b03ddab4f8222
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909263"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-virtual-machines"></a>Azure-Verwaltungsbibliotheken für Python-Beispiele für virtuelle Computer
 

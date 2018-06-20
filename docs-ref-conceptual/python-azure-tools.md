@@ -1,6 +1,6 @@
 ---
-title: "Azure-Tools für Python-Entwickler | Microsoft-Dokumentation"
-description: "IDE-Integrationen und Befehlszeilenschnittstellen für Python-Entwickler, die in Azure arbeiten."
+title: Azure-Tools für Python-Entwickler | Microsoft-Dokumentation
+description: IDE-Integrationen und Befehlszeilenschnittstellen für Python-Entwickler, die in Azure arbeiten.
 author: lisawong19
 manager: douge
 ms.devlang: python
@@ -14,6 +14,7 @@ ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26184594"
 ---
 # <a name="azure-tools-for-python-developers"></a>Azure-Tools für Python-Entwickler
 
