@@ -1,8 +1,8 @@
-# <a name="azure-monitor"></a>Azure Monitor
+# <a name="azure-monitor"></a><span data-ttu-id="d65a2-101">Azure Monitor</span><span class="sxs-lookup"><span data-stu-id="d65a2-101">Azure Monitor</span></span>
 
-In diesem Beispiel werden die Metriken einer Ressource in Azure (virtuelle Computer, usw.) abgerufen.
+<span data-ttu-id="d65a2-102">In diesem Beispiel werden die Metriken einer Ressource in Azure (virtuelle Computer, usw.) abgerufen.</span><span class="sxs-lookup"><span data-stu-id="d65a2-102">This sample get the metrics of a resource on Azure (VMs, etc.).</span></span>
 
-Eine vollständige Liste der verfügbaren Schlüsselwörter für Filter ist [hier](https://msdn.microsoft.com/en-us/library/azure/mt743622.aspx) verfügbar.
+<span data-ttu-id="d65a2-103">Eine vollständige Liste der verfügbaren Schlüsselwörter für Filter ist [hier](https://msdn.microsoft.com/en-us/library/azure/mt743622.aspx) verfügbar.</span><span class="sxs-lookup"><span data-stu-id="d65a2-103">A complete list of available keywords for filters is available [here](https://msdn.microsoft.com/en-us/library/azure/mt743622.aspx)</span></span>
 
 ```python
 import datetime

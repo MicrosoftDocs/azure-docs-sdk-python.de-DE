@@ -1,6 +1,6 @@
 ---
-title: "Azure Data Lake Store-Bibliotheken für Python"
-description: "Referenz zu Azure Data Lake Store-Bibliotheken für Python"
+title: Azure Data Lake Store-Bibliotheken für Python
+description: Referenz zu Azure Data Lake Store-Bibliotheken für Python
 keywords: Azure, Python, SDK, API, Data Lake Store
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479033"
 ---
 # <a name="azure-data-lake-store-libraries-for-python"></a><span data-ttu-id="dd3ab-104">Azure Data Lake Store-Bibliotheken für Python</span><span class="sxs-lookup"><span data-stu-id="dd3ab-104">Azure Data Lake Store libraries for python</span></span>
 

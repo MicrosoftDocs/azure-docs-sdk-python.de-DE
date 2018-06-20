@@ -1,9 +1,9 @@
 ---
 title: Auflisten von Images
-description: "Listen Sie alle verfügbaren Images auf, die zum Erstellen virtueller Computer verwendet werden sollen."
+description: Listen Sie alle verfügbaren Images auf, die zum Erstellen virtueller Computer verwendet werden sollen.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909033"
 ---
 # <a name="list-images"></a><span data-ttu-id="876b9-103">Auflisten von Images</span><span class="sxs-lookup"><span data-stu-id="876b9-103">List images</span></span>
 

@@ -13,6 +13,7 @@ ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33901353"
 ---
 # <a name="azure-sql-database-libraries-for-python"></a><span data-ttu-id="92203-103">Azure SQL-Datenbank-Bibliotheken für Python</span><span class="sxs-lookup"><span data-stu-id="92203-103">Azure SQL Database libraries for Python</span></span>
 
