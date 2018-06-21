@@ -1,6 +1,6 @@
 ---
-title: "Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python"
-description: "Authentifizieren mit einem Dienstprinzipal bei den Azure-Verwaltungsbibliotheken für Python"
+title: Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python
+description: Authentifizieren mit einem Dienstprinzipal bei den Azure-Verwaltungsbibliotheken für Python
 keywords: Azure, Python, SDK, API, Authentifizierung, Active Directory, Dienstprinzipal
 author: lisawong19
 ms.author: liwong
@@ -10,11 +10,12 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 78b248071e4718c1ab5ad743e697eafcfb510ec5
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720051"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python
 
@@ -216,6 +217,6 @@ In diesem Beispiel wird das Szenario mit Benutzername und Kennwort gezeigt. 2FA 
 
     credentials = UserPassCredentials(
         'user@domain.com',
-        'my_smart_password',
+        'my_smart_password'
     )
 ```
