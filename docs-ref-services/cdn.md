@@ -11,34 +11,34 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 92d6dd6ce55964bc48bb9bc654e8dec25f6b8344
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 06e6c8786ebbd88b7d3996b640af96a23cd5689b
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478883"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52275534"
 ---
-# <a name="azure-cdn-libraries-for-python"></a><span data-ttu-id="5c7ff-104">Azure CDN-Bibliotheken für Python</span><span class="sxs-lookup"><span data-stu-id="5c7ff-104">Azure CDN libraries for python</span></span>
+# <a name="azure-cdn-libraries-for-python"></a><span data-ttu-id="11e2a-104">Azure CDN-Bibliotheken für Python</span><span class="sxs-lookup"><span data-stu-id="11e2a-104">Azure CDN libraries for python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="5c7ff-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="5c7ff-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="11e2a-105">Übersicht</span><span class="sxs-lookup"><span data-stu-id="11e2a-105">Overview</span></span>
 
-<span data-ttu-id="5c7ff-106">[Azure Content Delivery Network (CDN)](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) ermöglicht die Bereitstellung von Caches für Webinhalte, um die weltweite Verfügbarkeit von hoher Bandbreite zu gewährleisten.</span><span class="sxs-lookup"><span data-stu-id="5c7ff-106">[Azure Content Delivery Network (CDN)](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) allows you to provide web content caches to ensure high-bandwidth availability across the globe.</span></span>
+<span data-ttu-id="11e2a-106">[Azure Content Delivery Network (CDN)](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) ermöglicht die Bereitstellung von Caches für Webinhalte, um die weltweite Verfügbarkeit von hoher Bandbreite zu gewährleisten.</span><span class="sxs-lookup"><span data-stu-id="11e2a-106">[Azure Content Delivery Network (CDN)](https://docs.microsoft.com/en-us/azure/cdn/cdn-overview) allows you to provide web content caches to ensure high-bandwidth availability across the globe.</span></span>
 
-<span data-ttu-id="5c7ff-107">Informationen zu den ersten Schritten mit Azure CDN finden Sie unter [Erste Schritte mit Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint).</span><span class="sxs-lookup"><span data-stu-id="5c7ff-107">To get started with Azure CDN, see [Getting started with Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint).</span></span>
+<span data-ttu-id="11e2a-107">Informationen zu den ersten Schritten mit Azure CDN finden Sie unter [Erste Schritte mit Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint).</span><span class="sxs-lookup"><span data-stu-id="11e2a-107">To get started with Azure CDN, see [Getting started with Azure CDN](https://docs.microsoft.com/en-us/azure/cdn/cdn-create-new-endpoint).</span></span>
 
-## <a name="management-apis"></a><span data-ttu-id="5c7ff-108">Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="5c7ff-108">Management APIs</span></span>
+## <a name="management-apis"></a><span data-ttu-id="11e2a-108">Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="11e2a-108">Management APIs</span></span>
 
-<span data-ttu-id="5c7ff-109">Mit der Verwaltungs-API können Sie Azure CDNs erstellen, abfragen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="5c7ff-109">Create, query, and manage Azure CDNs with the management API.</span></span>
+<span data-ttu-id="11e2a-109">Mit der Verwaltungs-API können Sie Azure CDNs erstellen, abfragen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="11e2a-109">Create, query, and manage Azure CDNs with the management API.</span></span>
 
-<span data-ttu-id="5c7ff-110">Installieren Sie das Verwaltungspaket über pip.</span><span class="sxs-lookup"><span data-stu-id="5c7ff-110">Install the management package via pip.</span></span>
+<span data-ttu-id="11e2a-110">Installieren Sie das Verwaltungspaket über pip.</span><span class="sxs-lookup"><span data-stu-id="11e2a-110">Install the management package via pip.</span></span>
 
 ```bash
 pip install azure-mgmt-cdn
 ```
 
-### <a name="example"></a><span data-ttu-id="5c7ff-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5c7ff-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="11e2a-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="11e2a-111">Example</span></span>
 
-<span data-ttu-id="5c7ff-112">Erstellen eines CDN-Profils mit einem definierten Endpunkt:</span><span class="sxs-lookup"><span data-stu-id="5c7ff-112">Creating a CDN profile with a single defined endpoint:</span></span>
+<span data-ttu-id="11e2a-112">Erstellen eines CDN-Profils mit einem definierten Endpunkt:</span><span class="sxs-lookup"><span data-stu-id="11e2a-112">Creating a CDN profile with a single defined endpoint:</span></span>
 
 ```python
 from azure.mgmt.cdn import CdnManagementClient
@@ -69,4 +69,4 @@ endpoint = endpoint_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="5c7ff-113">Informationen zu den Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="5c7ff-113">Explore the Management APIs</span></span>](/python/api/overview/azure/cdn/management)
+> [<span data-ttu-id="11e2a-113">Informationen zu den Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="11e2a-113">Explore the Management APIs</span></span>](/python/api/overview/azure/cdn/management)
