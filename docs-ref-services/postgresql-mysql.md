@@ -10,12 +10,12 @@ ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.openlocfilehash: e3cd84288ad8d49cfcd673506e2db150c02e7918
-ms.sourcegitcommit: 16eecfc4ed0e2a8344ce5887327cdf2619ba89e4
+ms.openlocfilehash: 402e87ae81e6df64b040293992244902313e5b1b
+ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2018
-ms.locfileid: "39189590"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54747720"
 ---
 # <a name="azure-mysqlpostgresql-libraries-for-python"></a>Azure MySQL-/PostgreSQL-Bibliotheken für Python
 
@@ -149,7 +149,7 @@ Ausführliche Informationen zum Abrufen von Anmeldeinformationen für die Authen
 #### <a name="example"></a>Beispiel
 In diesem Beispiel wird eine neue Postgres-Datenbank auf unserem vorhandenen Postgres-Server erstellt:
 ```python
-from azure.mgtm.rdbms.postgresql import PostgreSQLManagementClient
+from azure.mgmt.rdbms.postgresql import PostgreSQLManagementClient
 
 SUBSCRIPTION_ID = "YOUR_AZURE_SUBSCRIPTION_ID"
 RESOURCE_GROUP = "YOUR_AZURE_RESOURCE_GROUP_WITH_POSTGRES"
