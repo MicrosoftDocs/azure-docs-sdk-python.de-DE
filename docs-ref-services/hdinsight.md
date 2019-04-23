@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
-ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
+ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
+ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504547"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59586818"
 ---
 # <a name="hdinsight-sdk-for-python"></a>HDInsight SDK für Python
 
@@ -131,7 +131,11 @@ client = HDInsightManagementClient(credentials, SUBSCRIPTION_ID)
 
 ### <a name="create-a-cluster"></a>Erstellen eines Clusters
 
-Sie können einen neuen Cluster erstellen, indem Sie `client.clusters.create()` aufrufen. 
+Sie können einen neuen Cluster erstellen, indem Sie `client.clusters.create()` aufrufen.
+
+#### <a name="samples"></a>Beispiele
+
+Codebeispiele zum Erstellen verschiedener allgemeiner HDInsight-Clustertypen stehen zur Verfügung: [HDInsight-Python-Beispiele](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).
 
 #### <a name="example"></a>Beispiel
 
@@ -235,10 +239,6 @@ client.clusters.create(
         properties=params
     ))
 ```
-
-#### <a name="samples"></a>Beispiele
-
-Darüber hinaus stehen Codebeispiele zum Erstellen verschiedener allgemeiner HDInsight-Clustertypen zur Verfügung: [HDInsight-Python-Beispiele](https://github.com/Azure-Samples/hdinsight-python-sdk-samples).
 
 ### <a name="get-cluster-details"></a>Abrufen von Clusterdetails
 
