@@ -1,105 +1,100 @@
-items:
 - name: Azure für Python-Entwickler
   href: index.yml
+- name: Übersicht
   items:
-  - name: Übersicht
-    items:
     - name: Informationen zum Python SDK
       href: python-sdk-azure-overview.md
-  - name: Schnellstarts
-    items:
+- name: Schnellstarts
+  items:
     - name: Python SDK
       href: python-sdk-azure-get-started.yml
     - name: Entwicklertools
       href: python-azure-tools.md
     - name: App-Hosting
       items:
-      - name: App Service
-        href: https://docs.microsoft.com/azure/app-service/containers/quickstart-python
-        maintainContext: true
-      - name: kubernetes
-        href: https://docs.microsoft.com/azure/aks/kubernetes-walkthrough
-        maintainContext: true
-      - name: Virtuelle Linux-Computer
-        href: https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-cli
-        maintainContext: true
-      - name: Containerinstanzen
-        href: https://docs.microsoft.com/azure/container-instances/container-instances-quickstart
-        maintainContext: true
-      - name: Batch
-        href: https://docs.microsoft.com/azure/batch/quick-run-python
-        maintainContext: true
+        - name: App Service
+          href: 'https://docs.microsoft.com/azure/app-service/containers/quickstart-python'
+          maintainContext: true
+        - name: kubernetes
+          href: 'https://docs.microsoft.com/azure/aks/kubernetes-walkthrough'
+          maintainContext: true
+        - name: Virtuelle Linux-Computer
+          href: 'https://docs.microsoft.com/azure/virtual-machines/linux/quick-create-cli'
+          maintainContext: true
+        - name: Containerinstanzen
+          href: 'https://docs.microsoft.com/azure/container-instances/container-instances-quickstart'
+          maintainContext: true
+        - name: Batch
+          href: 'https://docs.microsoft.com/azure/batch/quick-run-python'
+          maintainContext: true
     - name: Datenlösungen
       items:
-      - name: Blob Storage
-        href: https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-python
-        maintainContext: true
-      - name: Table Storage
-        href: https://docs.microsoft.com/azure/cosmos-db/create-table-python
-        maintainContext: true
-      - name: Cosmos DB
-        href: https://docs.microsoft.com/azure/cosmos-db/sql-api-python-application
-        maintainContext: true
-      - name: Redis Cache
-        href: https://docs.microsoft.com/azure/redis-cache/cache-python-get-started
-        maintainContext: true
-      - name: SQL-Datenbank
-        href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python
-        maintainContext: true
-      - name: PostgreSQL
-        href: https://docs.microsoft.com/azure/app-service/containers/tutorial-docker-python-postgresql-app
-        maintainContext: true
-      - name: MySQL
-        href: https://docs.microsoft.com/azure/mysql/connect-python
-        maintainContext: true
-      - name: Data Factory
-        href: https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-python
-        maintainContext: true
+        - name: Blob Storage
+          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-python'
+          maintainContext: true
+        - name: Table Storage
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-table-python'
+          maintainContext: true
+        - name: Cosmos DB
+          href: 'https://docs.microsoft.com/azure/cosmos-db/sql-api-python-application'
+          maintainContext: true
+        - name: Redis Cache
+          href: 'https://docs.microsoft.com/azure/redis-cache/cache-python-get-started'
+          maintainContext: true
+        - name: SQL-Datenbank
+          href: 'https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python'
+          maintainContext: true
+        - name: PostgreSQL
+          href: 'https://docs.microsoft.com/azure/app-service/containers/tutorial-docker-python-postgresql-app'
+          maintainContext: true
+        - name: MySQL
+          href: 'https://docs.microsoft.com/azure/mysql/connect-python'
+          maintainContext: true
+        - name: Data Factory
+          href: 'https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-python'
+          maintainContext: true
     - name: KI und Machine Learning
       items:
-      - name: Machine Learning Services
-        href: https://docs.microsoft.com/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-1
-        maintainContext: true
-      - name: Batch AI
-        href: https://docs.microsoft.com/azure/batch-ai/quickstart-python
-        maintainContext: true
-      - name: Maschinelles Sehen
-        href: https://docs.microsoft.com/azure/cognitive-services/Computer-vision/Quickstarts/python-analyze
-        maintainContext: true
-      - name: Textanalyse
-        href: https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/quickstarts/python
-        maintainContext: true
-      - name: Azure-Notebooks
-        href: https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb
-        maintainContext: true
+        - name: Machine Learning Services
+          href: 'https://docs.microsoft.com/azure/machine-learning/desktop-workbench/tutorial-classifying-iris-part-1'
+          maintainContext: true
+        - name: Batch AI
+          href: 'https://docs.microsoft.com/azure/batch-ai/quickstart-python'
+          maintainContext: true
+        - name: Maschinelles Sehen
+          href: 'https://docs.microsoft.com/azure/cognitive-services/Computer-vision/Quickstarts/python-analyze'
+          maintainContext: true
+        - name: Textanalyse
+          href: 'https://docs.microsoft.com/azure/cognitive-services/Text-Analytics/quickstarts/python'
+          maintainContext: true
+        - name: Azure-Notebooks
+          href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
+          maintainContext: true
     - name: Sicherheit und Integration
       items:
-      - name: Service Bus
-        href: https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues
-        maintainContext: true
-      - name: Event Grid
-        href: https://docs.microsoft.com/azure/event-grid/custom-event-quickstart
-        maintainContext: true
-      - name: Key Vault
-        href: https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault
-      - name: Queue Storage
-        href: https://docs.microsoft.com/azure/storage/queues/storage-python-how-to-use-queue-storage
-        maintainContext: true
-    expanded: true
-  - name: Anleitungen
-    items:
-    - name: SDK
-      items:
-      - name: Installieren des SDKs
-        href: python-sdk-azure-install.md
-      - name: Authentifizierung
-        href: python-sdk-azure-authenticate.md
-      - name: Vorgangskonfiguration
-        href: python-sdk-azure-operation-config.md
-      - name: Entwicklung mit mehreren Clouds
-        href: python-sdk-azure-multi-cloud.md
-  - name: Beispiele
-    items:
+        - name: Service Bus
+          href: 'https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues'
+          maintainContext: true
+        - name: Event Grid
+          href: 'https://docs.microsoft.com/azure/event-grid/custom-event-quickstart'
+          maintainContext: true
+        - name: Key Vault
+          href: 'https://docs.microsoft.com/en-us/python/api/overview/azure/key-vault'
+        - name: Queue Storage
+          href: 'https://docs.microsoft.com/azure/storage/queues/storage-python-how-to-use-queue-storage'
+          maintainContext: true
+- name: Anleitungen
+  items:
+    - name: Installieren des SDKs
+      href: python-sdk-azure-install.md
+    - name: Authentication
+      href: python-sdk-azure-authenticate.md
+    - name: Vorgangskonfiguration
+      href: python-sdk-azure-operation-config.md
+    - name: Entwicklung mit mehreren Clouds
+      href: python-sdk-azure-multi-cloud.md
+- name: Beispiele
+  items:
     - name: Virtuelle Computer
       href: python-sdk-azure-virtual-machine-samples.md
     - name: Web-Apps
@@ -107,10 +102,4 @@ items:
     - name: SQL-Datenbank
       href: python-sdk-azure-sql-database-samples.md
     - name: Alle Python-Beispiele
-      href: https://azure.microsoft.com/resources/samples/?platform=python
-ms.openlocfilehash: 3cd4c0a08ad78da8f25ec22267b6c58e968adb03
-ms.sourcegitcommit: 16eecfc4ed0e2a8344ce5887327cdf2619ba89e4
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 07/21/2018
-ms.locfileid: "39189620"
+      href: 'https://azure.microsoft.com/resources/samples/?platform=python'
