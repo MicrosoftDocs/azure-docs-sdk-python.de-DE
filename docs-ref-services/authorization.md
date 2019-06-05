@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 8709bbd3cff448c7beb394621b163a4b3e3c3cd8
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: ee562614e9745cdc38ae427728df16c117ff80cf
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52276764"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376711"
 ---
 # <a name="azure-authorization-libraries-for-python"></a>Azure-Autorisierungsbibliotheken für Python
 
@@ -51,12 +51,11 @@ authorization_client = AuthorizationManagementClient(
     credentials,
     subscription_id
 )
-``` 
+```
 
 ## <a name="check-permissions-for-a-resource-group"></a>Überprüfen der Berechtigungen für eine Ressourcengruppe
 
-Der folgende Code überprüft die Berechtigungen in einer bestimmten Ressourcengruppe.
-Informationen zum Erstellen oder Verwalten von Ressourcengruppen finden Sie im Artikel zur [Ressourcenverwaltung](/python/api/overview/azure/azure.mgmt.resource).
+Der folgende Code überprüft die Berechtigungen in einer bestimmten Ressourcengruppe. Informationen zum Erstellen oder Verwalten von Ressourcengruppen finden Sie im Artikel zur [Ressourcenverwaltung](/python/api/overview/azure/azure.mgmt.resource).
 
 ```python
 from azure.mgmt.redis.models import Sku, RedisCreateOrUpdateParameters
@@ -70,4 +69,3 @@ permissions = self.authorization_client.permissions.list_for_resource_group(
 
 > [!div class="nextstepaction"]
 > [Informationen zu den Verwaltungs-APIs](/python/api/overview/azure/authorization/management)
-

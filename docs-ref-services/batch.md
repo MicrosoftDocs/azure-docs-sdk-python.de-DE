@@ -11,18 +11,18 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: fb9528c449d197440590bfc3b1991065cfe13357
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478983"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376838"
 ---
 # <a name="azure-batch-libraries-for-python"></a>Azure Batch-Bibliotheken für Python
 
 ## <a name="overview"></a>Übersicht
 
-Effizientes Ausführen umfangreicher paralleler HPC-Anwendungen in der Cloud mit [Azure Batch](/azure/batch/batch-technical-overview).   
+Effizientes Ausführen umfangreicher paralleler HPC-Anwendungen in der Cloud mit [Azure Batch](/azure/batch/batch-technical-overview).
 
 Informationen zu den ersten Schritte mit Azure Batch finden Sie unter [Erstellen eines Batch-Kontos mit dem Azure-Portal](/azure/batch/batch-account-create-portal).
 
