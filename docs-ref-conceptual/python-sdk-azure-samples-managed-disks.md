@@ -10,27 +10,25 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
-ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+ms.openlocfilehash: bee17efdb90d6365acb2adbf9c01d1f7e843da42
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839405"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376859"
 ---
 # <a name="managed-disks"></a>Managed Disks
 
-Azure Managed Disks und 1.000 virtuelle Computer in einer Skalierungsgruppe sind jetzt [allgemein verfügbar](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/). Azure Managed Disks bietet mehr Flexibilität, höhere Sicherheit und eine bessere Skalierung. Ein Speicherkonto für Datenträger ist nicht mehr erforderlich, sodass sich Kunden bei der Skalierung keine Gedanken um die mit Speicherkonten einhergehenden Einschränkungen machen müssen. Dieser Artikel enthält eine kurze Einführung und Referenz zur Nutzung des Diensts über Python.
-
-
+Azure Managed Disks bietet eine einfachere Datenträgerverwaltung, mehr Flexibilität, sowie höhere Sicherheit und eine bessere Skalierung. Ein Speicherkonto für Datenträger ist nicht mehr erforderlich, sodass sich Kunden bei der Skalierung keine Gedanken um die mit Speicherkonten einhergehenden Einschränkungen machen müssen. Dieser Artikel enthält eine kurze Einführung und Referenz zur Nutzung des Diensts über Python.
 
 Aus Entwicklerperspektive entspricht die Managed Disks-Umgebung in der Azure CLI der CLI-Umgebung in anderen plattformübergreifenden Tools. Für die Verwaltung von Managed Disks können Sie das [Azure Python](https://azure.microsoft.com/develop/python/) SDK und [azure-mgmt-compute-Paket 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) verwenden. Ein Computeclient kann anhand [dieses Tutorials](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python) erstellt werden.
-
 
 ## <a name="standalone-managed-disks"></a>Eigenständige verwaltete Datenträger
 
 Eigenständige verwaltete Datenträger können auf unterschiedliche Weise erstellt werden.
 
 ### <a name="create-an-empty-managed-disk"></a>Erstellen eines leeren verwalteten Datenträgers
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -48,7 +46,8 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-blob-storage"></a>Erstellen eines verwalteten Datenträgers über Blob Storage
+### <a name="create-a-managed-disk-from-blob-storage"></a>Erstellen eines verwalteten Datenträgers über den Blobspeicher
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -67,6 +66,7 @@ disk_resource = async_creation.result()
 ```
 
 ### <a name="create-a-managed-disk-from-your-own-image"></a>Erstellen eines verwalteten Datenträgers anhand eines eigenen Images
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -102,10 +102,12 @@ storage_profile = azure.mgmt.compute.models.StorageProfile(
         version='latest'
     )
 )
-``` 
+```
+
 Der Parameter ``storage_profile`` ist jetzt gültig. Ein vollständiges Beispiel zum Erstellen eines virtuellen Computers in Python (einschließlich Netzwerk usw.) finden Sie im vollständigen [Tutorial zu virtuellen Computern in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).
 
 Ein zuvor bereitgestellter verwalteter Datenträger kann ganz einfach angefügt werden.
+
 ```python
 vm = compute.virtual_machines.get(
     'my_resource_group',
@@ -128,7 +130,7 @@ async_update = compute_client.virtual_machines.create_or_update(
 async_update.wait()
 ```
 
-## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Skalierungsgruppen für virtuelle Computer mit Managed Disks
+## <a name="virtual-machine-scale-sets-with-managed-disks"></a>VM-Skalierungsgruppen mit Managed Disks
 
 Vor der Einführung von verwalteten Datenträgern mussten Sie manuell ein Speicherkonto für alle virtuellen Computer erstellen, die in der Skalierungsgruppe enthalten sein sollten, und anschließend mit dem Auflistungsparameter ``vhd_containers`` den vollständigen Speicherkontonamen an die REST-API der Skalierungsgruppe übergeben. Das offizielle Handbuch für den Übergang finden Sie in diesem Artikel: `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.
 
@@ -196,9 +198,9 @@ result_create = compute_client.virtual_machine_scale_sets.create_or_update(
     vmss_parameters,
 )
 vmss_result = result_create.result()
-``` 
+```
 
-## <a name="other-operations-with-managed-disks"></a>Andere Vorgänge mit verwalteten Datenträgern
+## <a name="other-operations-with-managed-disks"></a>Andere Vorgänge mit Managed Disks
 
 ### <a name="resizing-a-managed-disk"></a>Ändern der Größe eines verwalteten Datenträgers
 
@@ -214,6 +216,7 @@ async_update.wait()
 ```
 
 ### <a name="update-the-storage-account-type-of-the-managed-disks"></a>Aktualisieren des Speicherkontotyps der verwalteten Datenträger
+
 ```python
 from azure.mgmt.compute.models import StorageAccountTypes
 
@@ -227,7 +230,8 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="create-an-image-from-blob-storage"></a>Erstellen eines Images über Blob Storage
+### <a name="create-an-image-from-nlob-storage"></a>Erstellen eines Images über den Blobspeicher
+
 ```python
 async_create_image = compute_client.images.create_or_update(
     'my_resource_group',
@@ -248,6 +252,7 @@ image = async_create_image.result()
 ```
 
 ### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a>Erstellen einer Momentaufnahme eines verwalteten Datenträgers, der derzeit an einen virtuellen Computer angefügt ist
+
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
 async_snapshot_creation = self.compute_client.snapshots.create_or_update(
