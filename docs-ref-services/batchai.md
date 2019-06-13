@@ -1,6 +1,6 @@
 ---
-title: Azure Batch AI-Bibliotheken für Python
-description: Referenzdokumentation für die Python-Clientbibliotheken für Azure Batch AI
+title: Azure Batch KI-Bibliotheken für Python
+description: Referenzdokumentation für die Python-Clientbibliotheken für Azure Batch KI
 keywords: Azure, Python, SDK, API, SQL, Datenbank, PostGres,Cosmos DB, NoSQL
 author: garyericson
 ms.author: garye
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/29/2019
 ms.locfileid: "58618584"
 ---
-# <a name="azure-batch-ai-libraries-for-python"></a>Azure Batch AI-Bibliotheken für Python
+# <a name="azure-batch-ai-libraries-for-python"></a>Azure Batch KI-Bibliotheken für Python
 
 >[!Note]
->**Azure Batch AI wurde eingestellt.** Die Funktionen von Azure Batch AI sind nun als verwaltetes Computeziel in Azure Machine Learning Service verfügbar. Weitere Informationen finden Sie unter [Was ist mit Azure Batch AI passiert?](https://aka.ms/batchai-retirement)
+>**Azure Batch AI wurde eingestellt.** Die Funktionen von Azure Batch KI sind nun als verwaltetes Computeziel in Azure Machine Learning Service verfügbar. Weitere Informationen finden Sie unter [Was ist mit Azure Batch KI passiert?](https://aka.ms/batchai-retirement).
