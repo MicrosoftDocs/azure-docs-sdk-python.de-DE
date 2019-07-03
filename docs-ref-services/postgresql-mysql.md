@@ -3,19 +3,19 @@ title: Azure MySQL-/PostgreSQL-Bibliotheken für Python
 description: ''
 keywords: Azure, Python, SDK, API, SQL, Datenbank, MySQL, PostgreSQL
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/19/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.openlocfilehash: 402e87ae81e6df64b040293992244902313e5b1b
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: 81a29ea16dc9857257859181f0c2e5be8b4b7901
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747720"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534237"
 ---
 # <a name="azure-mysqlpostgresql-libraries-for-python"></a>Azure MySQL-/PostgreSQL-Bibliotheken für Python
 
@@ -25,7 +25,7 @@ Verwenden Sie über Python mit dem MySQL-Manager und pyodbc in [Azure MySQL-Date
 
 ### <a name="client-odbc-driver-and-pyodbc"></a>ODBC-Clienttreiber und pyodbc
 
-Für den Zugriff auf Azure-Datenbank für MySQL wird als Clientbibliothek der [ODBC-Treiber](/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) von Microsoft empfohlen. Verwenden Sie den ODBC-Treiber zum Herstellen einer Verbindung mit der Datenbank und zum direkten Ausführen von SQL-Anweisungen.
+Für den Zugriff auf Azure-Datenbank für MySQL wird als Clientbibliothek der [ODBC-Treiber](/azure/sql-database/sql-database-connect-query-python#prerequisites) von Microsoft empfohlen. Verwenden Sie den ODBC-Treiber zum Herstellen einer Verbindung mit der Datenbank und zum direkten Ausführen von SQL-Anweisungen.
 
 #### <a name="example"></a>Beispiel
 
@@ -113,7 +113,7 @@ Verwenden Sie den ODBC-Treiber und pyodbc zum Herstellen einer Verbindung mit de
 Weitere Informationen zu [Azure-Datenbank für PostgreSQL](https://docs.microsoft.com/azure/postgresql/)
 
 ### <a name="client-odbc-driver-and-pyodbc"></a>ODBC-Clienttreiber und pyodbc
-Für den Zugriff auf Azure-Datenbank für PostgreSQL werden als Clientbibliothek der [ODBC-Treiber von Microsoft und pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) empfohlen.
+Für den Zugriff auf Azure Database for PostgreSQL werden als Clientbibliothek der [ODBC-Treiber von Microsoft und pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#prerequisites) empfohlen.
 
 #### <a name="example"></a>Beispiel 
 

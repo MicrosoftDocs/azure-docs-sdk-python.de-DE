@@ -3,7 +3,7 @@ title: Azure-Ressourcenbibliotheken für Python
 description: ''
 keywords: Azure, Python, SDK, API, Ressourcen
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/19/2017
 ms.topic: article
@@ -11,19 +11,19 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: resources
-ms.openlocfilehash: 32e13bee27db091f0bca12c7d9ae4fc62165f4c0
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: d708a5e7296b166b6e55b9b7b0d995e72e264267
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909393"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534371"
 ---
 # <a name="azure-resources-libraries-for-python"></a>Azure-Ressourcenbibliotheken für Python 
 
 ## <a name="overview"></a>Übersicht 
 Verwalten von Azure-Ressourcen in Ressourcengruppen
 
-| Paket  |  Beschreibung |
+| Paket  |  BESCHREIBUNG |
 |---|---|
 |[azure.mgmt.resource.features][1]|Die Steuerung für die Azure-Featureanzeige (Azure Feature Exposure Control, AFEC) ist ein Mechanismus, mit dem Ressourcenanbieter die Anzeige von Features für Benutzer steuern können.|
 |[azure.mgmt.resource.links][2]|Azure-Ressourcen können verknüpft werden, um logische Beziehungen zu bilden. Sie können Verknüpfungen zwischen Ressourcen aus verschiedenen Ressourcengruppen herstellen.|
