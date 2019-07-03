@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 06/21/2017
-ms.author: liwong
-ms.openlocfilehash: 35faf0a6b74e4122c22ae0a6304d990dd13df057
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.author: routlaw
+ms.openlocfilehash: 0930654af3c3f5bc6d3341959dff929225ebcf7d
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2017
-ms.locfileid: "26184594"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534487"
 ---
 # <a name="azure-tools-for-python-developers"></a>Azure-Tools für Python-Entwickler
 

@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
-ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
+ms.openlocfilehash: 5a23a52414e70facd6feae3af3956a5131f6b5c4
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67148170"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534344"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Azure Cognitive Services-Module für Python
 
@@ -36,7 +36,7 @@ Testen Sie [maschinelles Sehen](https://azure.microsoft.com/en-us/services/cogni
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-vision-computervision
 ```
 
@@ -48,7 +48,7 @@ Computergestützte Moderation von Texten, Videos und Bildern, erweitert um Tools
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
@@ -60,7 +60,7 @@ Laden Sie Bilder hoch, um ein Modell für maschinelles Sehen für Ihren bestimmt
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-vision-customvision
 ```
 
@@ -74,7 +74,7 @@ Testen Sie die [Gesichtserkennungs-API](https://azure.microsoft.com/en-us/servic
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install cognitive-face
 ```
 
@@ -90,7 +90,7 @@ Testen Sie die [Websuche-API](https://azure.microsoft.com/en-us/services/cogniti
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-search-websearch
 ```
 
@@ -104,7 +104,7 @@ Testen Sie die [Bildersuche-API](https://azure.microsoft.com/en-us/services/cogn
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-search-imagesearch
 ```
 
@@ -119,7 +119,7 @@ Testen Sie die [Entitätssuche-API](https://azure.microsoft.com/services/cogniti
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-search-entitysearch
 ```
 
@@ -131,7 +131,7 @@ Erstellen Sie eine benutzerdefinierte Websuche für Ihren spezifischen Suchberei
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-search-customsearch
 ```
 
@@ -145,7 +145,7 @@ Testen Sie die [Videosuche-API](https://azure.microsoft.com/services/cognitive-s
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-search-videosearch
 ```
 
@@ -160,11 +160,11 @@ Testen Sie die [News-Suche-API](https://azure.microsoft.com/services/cognitive-s
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-search-newssearch
 ```
 
-[Weitere Informationen](/azure/cognitive-services/bing-news-search/search-the-web) zum Bing-Dienst für die News-Suche und erste Schritte mit dem [Schnellstart für die News-Suche-API mit Python ](//azure/cognitive-services/bing-news-search/python)
+[Weitere Informationen](/azure/cognitive-services/bing-news-search/search-the-web) zum Bing-Dienst für die News-Suche und erste Schritte mit dem [Schnellstart für die News-Suche-API mit Python ](/azure/cognitive-services/bing-news-search/python)
 
 
 ## <a name="language-modules"></a>Sprachmodule
@@ -181,7 +181,7 @@ Testen Sie die [Textanalyse-API](https://azure.microsoft.com/en-us/services/cogn
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-language-textanalytics
 ```
 
@@ -196,7 +196,7 @@ Testen Sie die [Rechtschreibprüfungs-API](https://azure.microsoft.com/en-us/ser
 
 Rufen Sie das Python-Modul mit [pip](https://pip.pypa.io/en/stable/quickstart/) ab:
 
-```
+```python
 pip install azure-cognitiveservices-language-spellcheck
 ```
 

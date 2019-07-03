@@ -3,7 +3,7 @@ title: Azure-Bibliotheken für Python
 description: Übersicht über die Azure-Verwaltungsbibliotheken und -Dienstbibliotheken für Python
 keywords: Azure, Python, SDK, API
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/01/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: ''
-ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: bb17295de2f0272f0525fda5edab87e840764478
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478803"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534466"
 ---
 # <a name="azure-libraries-for-python"></a>Azure-Bibliotheken für Python
 
@@ -75,7 +75,7 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 ## <a name="sample-code-and-reference"></a>Beispielcode und Referenz
 Die folgenden Beispiele behandeln allgemeine Automatisierungsaufgaben mit den Azure-Verwaltungsbibliotheken für Python und enthalten Code, der direkt in Ihren eigenen Apps verwendet werden kann:
-- [Virtual Machines](python-sdk-azure-virtual-machine-samples.md)
+- [Virtuelle Computer](python-sdk-azure-virtual-machine-samples.md)
 - [Web-Apps](python-sdk-azure-web-apps-samples.md)
 - [SQL-Datenbank](python-sdk-azure-sql-database-samples.md)
 
@@ -83,4 +83,4 @@ Sowohl in den Dienst- als auch den Verwaltungsbibliotheken ist eine [Referenz](/
 
 ## <a name="get-help-and-give-feedback"></a>Hilfe und Feedback
 
-Senden Sie Fragen an die [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python)-Community, und öffnen Sie SDK-Probleme im [Projekt-GitHub](https://github.com/Azure/azure-sdk-for-python).
+Senden Sie Fragen an die [Stack Overflow](https://stackoverflow.com/questions/tagged/azure-sdk-python)-Community, und öffnen Sie SDK-Probleme im [Projekt-GitHub](https://github.com/Azure/azure-sdk-for-python).
