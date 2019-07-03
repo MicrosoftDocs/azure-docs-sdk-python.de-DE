@@ -3,33 +3,33 @@ title: Azure MySQL-/PostgreSQL-Bibliotheken für Python
 description: ''
 keywords: Azure, Python, SDK, API, SQL, Datenbank, MySQL, PostgreSQL
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/19/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.openlocfilehash: 402e87ae81e6df64b040293992244902313e5b1b
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: 81a29ea16dc9857257859181f0c2e5be8b4b7901
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747720"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534237"
 ---
-# <a name="azure-mysqlpostgresql-libraries-for-python"></a><span data-ttu-id="25db4-103">Azure MySQL-/PostgreSQL-Bibliotheken für Python</span><span class="sxs-lookup"><span data-stu-id="25db4-103">Azure MySQL/PostgreSQL libraries for Python</span></span>
+# <a name="azure-mysqlpostgresql-libraries-for-python"></a><span data-ttu-id="a209f-103">Azure MySQL-/PostgreSQL-Bibliotheken für Python</span><span class="sxs-lookup"><span data-stu-id="a209f-103">Azure MySQL/PostgreSQL libraries for Python</span></span>
 
-## <a name="mysql"></a><span data-ttu-id="25db4-104">MySQL</span><span class="sxs-lookup"><span data-stu-id="25db4-104">MySQL</span></span>
+## <a name="mysql"></a><span data-ttu-id="a209f-104">MySQL</span><span class="sxs-lookup"><span data-stu-id="a209f-104">MySQL</span></span>
 
-<span data-ttu-id="25db4-105">Verwenden Sie über Python mit dem MySQL-Manager und pyodbc in [Azure MySQL-Datenbank](/azure/mysql/overview) gespeicherte Ressourcen und Daten.</span><span class="sxs-lookup"><span data-stu-id="25db4-105">Work with resources and data stored in [Azure MySQL Database](/azure/mysql/overview) from python with the MySQL manager and pyodbc.</span></span>
+<span data-ttu-id="a209f-105">Verwenden Sie über Python mit dem MySQL-Manager und pyodbc in [Azure MySQL-Datenbank](/azure/mysql/overview) gespeicherte Ressourcen und Daten.</span><span class="sxs-lookup"><span data-stu-id="a209f-105">Work with resources and data stored in [Azure MySQL Database](/azure/mysql/overview) from python with the MySQL manager and pyodbc.</span></span>
 
-### <a name="client-odbc-driver-and-pyodbc"></a><span data-ttu-id="25db4-106">ODBC-Clienttreiber und pyodbc</span><span class="sxs-lookup"><span data-stu-id="25db4-106">Client ODBC driver and pyodbc</span></span>
+### <a name="client-odbc-driver-and-pyodbc"></a><span data-ttu-id="a209f-106">ODBC-Clienttreiber und pyodbc</span><span class="sxs-lookup"><span data-stu-id="a209f-106">Client ODBC driver and pyodbc</span></span>
 
-<span data-ttu-id="25db4-107">Für den Zugriff auf Azure-Datenbank für MySQL wird als Clientbibliothek der [ODBC-Treiber](/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) von Microsoft empfohlen.</span><span class="sxs-lookup"><span data-stu-id="25db4-107">The recommended client library for accessing Azure Database for MySQL is the Microsoft [ODBC driver](/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries).</span></span> <span data-ttu-id="25db4-108">Verwenden Sie den ODBC-Treiber zum Herstellen einer Verbindung mit der Datenbank und zum direkten Ausführen von SQL-Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="25db4-108">Use the ODBC driver to connect to the database and execute SQL statements directly.</span></span>
+<span data-ttu-id="a209f-107">Für den Zugriff auf Azure-Datenbank für MySQL wird als Clientbibliothek der [ODBC-Treiber](/azure/sql-database/sql-database-connect-query-python#prerequisites) von Microsoft empfohlen.</span><span class="sxs-lookup"><span data-stu-id="a209f-107">The recommended client library for accessing Azure Database for MySQL is the Microsoft [ODBC driver](/azure/sql-database/sql-database-connect-query-python#prerequisites).</span></span> <span data-ttu-id="a209f-108">Verwenden Sie den ODBC-Treiber zum Herstellen einer Verbindung mit der Datenbank und zum direkten Ausführen von SQL-Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="a209f-108">Use the ODBC driver to connect to the database and execute SQL statements directly.</span></span>
 
-#### <a name="example"></a><span data-ttu-id="25db4-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="25db4-109">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="a209f-109">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a209f-109">Example</span></span>
 
-<span data-ttu-id="25db4-110">Stellen Sie eine Verbindung mit Azure-Datenbank für MySQL her, und wählen Sie alle Datensätze in der Vertriebstabelle aus.</span><span class="sxs-lookup"><span data-stu-id="25db4-110">Connect to a Azure Database for MySQL and select all records in the sales table.</span></span> <span data-ttu-id="25db4-111">Sie können die ODBC-Verbindungszeichenfolge für die Datenbank aus dem Azure-Portal abrufen.</span><span class="sxs-lookup"><span data-stu-id="25db4-111">You can get the ODBC connection string for the database from the Azure Portal.</span></span>
+<span data-ttu-id="a209f-110">Stellen Sie eine Verbindung mit Azure-Datenbank für MySQL her, und wählen Sie alle Datensätze in der Vertriebstabelle aus.</span><span class="sxs-lookup"><span data-stu-id="a209f-110">Connect to a Azure Database for MySQL and select all records in the sales table.</span></span> <span data-ttu-id="a209f-111">Sie können die ODBC-Verbindungszeichenfolge für die Datenbank aus dem Azure-Portal abrufen.</span><span class="sxs-lookup"><span data-stu-id="a209f-111">You can get the ODBC connection string for the database from the Azure Portal.</span></span>
 
 ```python
 SERVER = 'YOUR_SEVER_NAME' + '.mysql.database.azure.com'
@@ -45,21 +45,21 @@ selectsql = "SELECT * FROM SALES"  # SALES is an example table name
 cursor.execute(selectsql)
 ```
 
-### <a name="management-api"></a><span data-ttu-id="25db4-112">Verwaltungs-API</span><span class="sxs-lookup"><span data-stu-id="25db4-112">Management API</span></span>
+### <a name="management-api"></a><span data-ttu-id="a209f-112">Verwaltungs-API</span><span class="sxs-lookup"><span data-stu-id="a209f-112">Management API</span></span>
 
-<span data-ttu-id="25db4-113">Über die Verwaltungs-API können Sie MySQL-Ressourcen in Ihrem Abonnement erstellen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="25db4-113">Create and manage MySQL resources in your subscription with the management API.</span></span>
+<span data-ttu-id="a209f-113">Über die Verwaltungs-API können Sie MySQL-Ressourcen in Ihrem Abonnement erstellen und verwalten.</span><span class="sxs-lookup"><span data-stu-id="a209f-113">Create and manage MySQL resources in your subscription with the management API.</span></span>
 
-#### <a name="requirements"></a><span data-ttu-id="25db4-114">Requirements (Anforderungen)</span><span class="sxs-lookup"><span data-stu-id="25db4-114">Requirements</span></span>
-<span data-ttu-id="25db4-115">Sie müssen die MySQL-Verwaltungsbibliotheken für Python installieren.</span><span class="sxs-lookup"><span data-stu-id="25db4-115">You must install the MySQL management libraries for Python.</span></span>
+#### <a name="requirements"></a><span data-ttu-id="a209f-114">Requirements (Anforderungen)</span><span class="sxs-lookup"><span data-stu-id="a209f-114">Requirements</span></span>
+<span data-ttu-id="a209f-115">Sie müssen die MySQL-Verwaltungsbibliotheken für Python installieren.</span><span class="sxs-lookup"><span data-stu-id="a209f-115">You must install the MySQL management libraries for Python.</span></span>
 ```bash
 pip install azure-mgmt-rdbms
 ```
 
-<span data-ttu-id="25db4-116">Ausführliche Informationen zum Abrufen von Anmeldeinformationen für die Authentifizierung beim Verwaltungsclient finden Sie unter [Authenticate with the Azure Management Libraries for Python](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) (Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python).</span><span class="sxs-lookup"><span data-stu-id="25db4-116">Please see the [Python SDK authentication](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) page for details on obtaining credentials to authenticate with the management client.</span></span>
+<span data-ttu-id="a209f-116">Ausführliche Informationen zum Abrufen von Anmeldeinformationen für die Authentifizierung beim Verwaltungsclient finden Sie unter [Authenticate with the Azure Management Libraries for Python](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) (Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python).</span><span class="sxs-lookup"><span data-stu-id="a209f-116">Please see the [Python SDK authentication](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) page for details on obtaining credentials to authenticate with the management client.</span></span>
 
-#### <a name="example"></a><span data-ttu-id="25db4-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="25db4-117">Example</span></span>
+#### <a name="example"></a><span data-ttu-id="a209f-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a209f-117">Example</span></span>
 
-<span data-ttu-id="25db4-118">Erstellen Sie eine MySQL 5.7-Datenbank-Ressource, und schränken Sie den Zugriff mithilfe einer Firewallregel auf einen bestimmten IP-Adressbereich ein.</span><span class="sxs-lookup"><span data-stu-id="25db4-118">Create a MySQL 5.7 Database resource and restrict access to a range of IP addresses using a firewall rule.</span></span>
+<span data-ttu-id="a209f-118">Erstellen Sie eine MySQL 5.7-Datenbank-Ressource, und schränken Sie den Zugriff mithilfe einer Firewallregel auf einen bestimmten IP-Adressbereich ein.</span><span class="sxs-lookup"><span data-stu-id="a209f-118">Create a MySQL 5.7 Database resource and restrict access to a range of IP addresses using a firewall rule.</span></span>
 
 ```python
 
@@ -105,19 +105,19 @@ firewall_rule = rule_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="25db4-119">Informationen zu den Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="25db4-119">Explore the Management APIs</span></span>](/python/api/overview/azure/postgresql/mysql/management)
+> [<span data-ttu-id="a209f-119">Informationen zu den Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="a209f-119">Explore the Management APIs</span></span>](/python/api/overview/azure/postgresql/mysql/management)
 
-## <a name="postgresql"></a><span data-ttu-id="25db4-120">PostgreSQL</span><span class="sxs-lookup"><span data-stu-id="25db4-120">PostgreSQL</span></span>
-<span data-ttu-id="25db4-121">Verwenden Sie den ODBC-Treiber und pyodbc zum Herstellen einer Verbindung mit der Datenbank und zum direkten Ausführen von SQL-Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="25db4-121">Use the ODBC driver and pyodbc to connect to the database and execute SQL statements directly.</span></span>
+## <a name="postgresql"></a><span data-ttu-id="a209f-120">PostgreSQL</span><span class="sxs-lookup"><span data-stu-id="a209f-120">PostgreSQL</span></span>
+<span data-ttu-id="a209f-121">Verwenden Sie den ODBC-Treiber und pyodbc zum Herstellen einer Verbindung mit der Datenbank und zum direkten Ausführen von SQL-Anweisungen.</span><span class="sxs-lookup"><span data-stu-id="a209f-121">Use the ODBC driver and pyodbc to connect to the database and execute SQL statements directly.</span></span>
 
-<span data-ttu-id="25db4-122">Weitere Informationen zu [Azure-Datenbank für PostgreSQL](https://docs.microsoft.com/azure/postgresql/)</span><span class="sxs-lookup"><span data-stu-id="25db4-122">Learn more about [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/).</span></span>
+<span data-ttu-id="a209f-122">Weitere Informationen zu [Azure-Datenbank für PostgreSQL](https://docs.microsoft.com/azure/postgresql/)</span><span class="sxs-lookup"><span data-stu-id="a209f-122">Learn more about [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/).</span></span>
 
-### <a name="client-odbc-driver-and-pyodbc"></a><span data-ttu-id="25db4-123">ODBC-Clienttreiber und pyodbc</span><span class="sxs-lookup"><span data-stu-id="25db4-123">Client ODBC driver and pyodbc</span></span>
-<span data-ttu-id="25db4-124">Für den Zugriff auf Azure-Datenbank für PostgreSQL werden als Clientbibliothek der [ODBC-Treiber von Microsoft und pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) empfohlen.</span><span class="sxs-lookup"><span data-stu-id="25db4-124">The recommended client library for accessing Azure Database for PostgreSQL is the Microsoft [ODBC driver and pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries)</span></span>
+### <a name="client-odbc-driver-and-pyodbc"></a><span data-ttu-id="a209f-123">ODBC-Clienttreiber und pyodbc</span><span class="sxs-lookup"><span data-stu-id="a209f-123">Client ODBC driver and pyodbc</span></span>
+<span data-ttu-id="a209f-124">Für den Zugriff auf Azure Database for PostgreSQL werden als Clientbibliothek der [ODBC-Treiber von Microsoft und pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#prerequisites) empfohlen.</span><span class="sxs-lookup"><span data-stu-id="a209f-124">The recommended client library for accessing Azure Database for PostgreSQL is the Microsoft [ODBC driver and pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#prerequisites).</span></span>
 
-#### <a name="example"></a><span data-ttu-id="25db4-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="25db4-125">Example</span></span> 
+#### <a name="example"></a><span data-ttu-id="a209f-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a209f-125">Example</span></span> 
 
-<span data-ttu-id="25db4-126">Stellen Sie eine Verbindung mit Azure-Datenbank für PostgreSQL her, und wählen Sie alle Datensätze in der Tabelle `SALES` aus.</span><span class="sxs-lookup"><span data-stu-id="25db4-126">Connect to a Azure Database for PostgreSQL and select all records in the `SALES` table.</span></span> <span data-ttu-id="25db4-127">Sie können die ODBC-Verbindungszeichenfolge für die Datenbank aus dem Azure-Portal abrufen.</span><span class="sxs-lookup"><span data-stu-id="25db4-127">You can get the ODBC connection string for the database from the Azure Portal.</span></span>
+<span data-ttu-id="a209f-126">Stellen Sie eine Verbindung mit Azure-Datenbank für PostgreSQL her, und wählen Sie alle Datensätze in der Tabelle `SALES` aus.</span><span class="sxs-lookup"><span data-stu-id="a209f-126">Connect to a Azure Database for PostgreSQL and select all records in the `SALES` table.</span></span> <span data-ttu-id="a209f-127">Sie können die ODBC-Verbindungszeichenfolge für die Datenbank aus dem Azure-Portal abrufen.</span><span class="sxs-lookup"><span data-stu-id="a209f-127">You can get the ODBC connection string for the database from the Azure Portal.</span></span>
 
 ```python
 import pyodbc
@@ -137,17 +137,17 @@ selectsql = "SELECT * FROM SALES" # SALES is an example table name
 cursor.execute(selectsql)
 ```
 
-### <a name="management-api"></a><span data-ttu-id="25db4-128">Verwaltungs-API</span><span class="sxs-lookup"><span data-stu-id="25db4-128">Management API</span></span>
-#### <a name="requirements"></a><span data-ttu-id="25db4-129">Requirements (Anforderungen)</span><span class="sxs-lookup"><span data-stu-id="25db4-129">Requirements</span></span>
-<span data-ttu-id="25db4-130">Sie müssen die PostgreSQL-Verwaltungsbibliotheken für Python installieren.</span><span class="sxs-lookup"><span data-stu-id="25db4-130">You must install the PostgreSQL management libraries for Python.</span></span>
+### <a name="management-api"></a><span data-ttu-id="a209f-128">Verwaltungs-API</span><span class="sxs-lookup"><span data-stu-id="a209f-128">Management API</span></span>
+#### <a name="requirements"></a><span data-ttu-id="a209f-129">Requirements (Anforderungen)</span><span class="sxs-lookup"><span data-stu-id="a209f-129">Requirements</span></span>
+<span data-ttu-id="a209f-130">Sie müssen die PostgreSQL-Verwaltungsbibliotheken für Python installieren.</span><span class="sxs-lookup"><span data-stu-id="a209f-130">You must install the PostgreSQL management libraries for Python.</span></span>
 ```bash
 pip install azure-mgmt-rdbms
 ```
 
-<span data-ttu-id="25db4-131">Ausführliche Informationen zum Abrufen von Anmeldeinformationen für die Authentifizierung beim Verwaltungsclient finden Sie unter [Authenticate with the Azure Management Libraries for Python](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) (Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python).</span><span class="sxs-lookup"><span data-stu-id="25db4-131">Please see the [Python SDK authentication](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) page for details on obtaining credentials to authenticate with the management client.</span></span>
+<span data-ttu-id="a209f-131">Ausführliche Informationen zum Abrufen von Anmeldeinformationen für die Authentifizierung beim Verwaltungsclient finden Sie unter [Authenticate with the Azure Management Libraries for Python](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) (Authentifizieren bei den Azure-Verwaltungsbibliotheken für Python).</span><span class="sxs-lookup"><span data-stu-id="a209f-131">Please see the [Python SDK authentication](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) page for details on obtaining credentials to authenticate with the management client.</span></span>
 
-#### <a name="example"></a><span data-ttu-id="25db4-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="25db4-132">Example</span></span>
-<span data-ttu-id="25db4-133">In diesem Beispiel wird eine neue Postgres-Datenbank auf unserem vorhandenen Postgres-Server erstellt:</span><span class="sxs-lookup"><span data-stu-id="25db4-133">In this example we will create a new Postgres database on our existing Postgres server.</span></span>
+#### <a name="example"></a><span data-ttu-id="a209f-132">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a209f-132">Example</span></span>
+<span data-ttu-id="a209f-133">In diesem Beispiel wird eine neue Postgres-Datenbank auf unserem vorhandenen Postgres-Server erstellt:</span><span class="sxs-lookup"><span data-stu-id="a209f-133">In this example we will create a new Postgres database on our existing Postgres server.</span></span>
 ```python
 from azure.mgmt.rdbms.postgresql import PostgreSQLManagementClient
 
@@ -165,4 +165,4 @@ db = db_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="25db4-134">Informationen zu den Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="25db4-134">Explore the Management APIs</span></span>](/python/api/overview/azure/postgresql/mysql/management)
+> [<span data-ttu-id="a209f-134">Informationen zu den Verwaltungs-APIs</span><span class="sxs-lookup"><span data-stu-id="a209f-134">Explore the Management APIs</span></span>](/python/api/overview/azure/postgresql/mysql/management)
